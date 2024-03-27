@@ -3,6 +3,7 @@
 body {
   background-color: white;
   font-family: "Rubik", sans-serif;
+  margin: 0;
 }
 section,
 header,
@@ -106,4 +107,103 @@ a {
 }
 #opera {
   margin-top: 60px;
+}
+
+.answer {
+  display: none;
+}
+
+.faq {
+  width: 50%;
+  margin: 0 auto;
+}
+.faq > h2,
+.faq > p {
+  text-align: center;
+}
+.faq ol {
+  list-style: none;
+}
+.faq li {
+  border-top: 1px solid darkgrey;
+}
+.faq li:last-child {
+  border-bottom: 1px solid darkgrey;
+}
+.faq button {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.faq .blue-link {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+}
+
+.mail-list {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+}
+.mail-list > * {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+.mail-list h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+.mail-list p {
+  font-size: 28px;
+  font-weight: bold;
+}
+.mail-list input {
+  font: inherit;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: hsl(229, 31%, 21%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+}
+footer .socials {
+  margin-left: auto;
+}
+
+header .menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* mobile design */
+@media (max-width: 724px) {
+  section,
+  header,
+  footer {
+    padding: 20px;
+  }
+  header .menu-btn {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
